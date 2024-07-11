@@ -1,0 +1,307 @@
+body {
+  padding: 0px;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #4b7355;
+  color: white;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2em;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav .logo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .logo h5 {
+  margin: 0;
+  padding: 0;
+}
+nav .sections {
+  padding: 10px;
+  margin: 0;
+}
+nav .sections ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav .sections ul li {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.877);
+}
+main #about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  min-width: 300px;
+  background-color: #698c71;
+}
+main #about #image {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+main #about #image img {
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+main #about #text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #about #text h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+main #about #text p {
+  font-size: 1em;
+}
+
+#education {
+  padding: 10px;
+  background-color: #698c71;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+#education .section {
+  text-align: right;
+  padding: 10px;
+}
+#education .section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#education .section h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#education .section p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+}
+
+#skills {
+  padding: 10px;
+  background-color: #698c71;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+#skills .section {
+  padding: 10px;
+}
+#skills .section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+#skills .section p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #698c71;
+  width: 70%;
+}
+#work .frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#work .frame p {
+  margin: 0;
+  padding: 0;
+}
+#work #grid {
+  padding: 10px;
+  display: grid;
+  margin: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#work #grid div {
+  height: 200px;
+  width: 200px;
+  margin: 1px;
+}
+#work #grid div img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+#work #grid div img:hover {
+  filter: grayscale(0%);
+  transition: 1s ease;
+}
+
+#worktext {
+  padding: 10px;
+  background-color: #698c71;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+#worktext .section {
+  padding: 10px;
+}
+#worktext .section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+#experience {
+  padding: 10px;
+  background-color: #698c71;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+#experience .section {
+  padding: 10px;
+}
+#experience .section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+#experience .section h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#experience .section p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+}
+
+#contact {
+  padding: 10px;
+  background-color: #698c71;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+}
+#contact .section {
+  padding: 10px;
+}
+#contact .section h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+#contact .section h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#contact .section p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7em;
+}
+
+.pills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pills #email {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 40%;
+  font-size: large;
+}
+.pills #email a {
+  color: #4b7355;
+}
+.pills #email i {
+  color: #4b7355;
+  margin: 5px;
+}
+.pills #linkedin {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 40%;
+  font-size: large;
+}
+.pills #linkedin a {
+  color: #4b7355;
+}
+.pills #linkedin i {
+  color: #4b7355;
+  margin: 5px;
+}
+.pills #location {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 40%;
+  font-size: large;
+}
+.pills #location a {
+  color: #4b7355;
+}
+.pills #location i {
+  color: #4b7355;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  main #image img {
+    width: 50px;
+  }
+  main #text {
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=styles.css.map */
