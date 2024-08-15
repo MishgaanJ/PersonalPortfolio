@@ -1,2 +1,2 @@
-# Softbit2
+# Personal Portfolio
 Personal portfolio website using HTML and CSS. 
